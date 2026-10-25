@@ -144,7 +144,16 @@ const aVeryBigSum = (arr) => {
   return sum;
 };
 
-//18 gradingStudents
+// 18 gradingStudents
+const staireCase = (n) => {
+  for (let i = 1; i <= n; i++) {
+    const spaces = " ".repeat(n - i);
+    const hashes = "#".repeat(i);
+    console.log(spaces + hashes, i);
+  }
+};
+
+//19 gradingStudents
 const gradingStudents = (arr) => {
   let newArr = [];
   arr.map((num) => {
@@ -159,7 +168,7 @@ const gradingStudents = (arr) => {
   return newArr;
 };
 
-//19 timeConversion
+//20 timeConversion
 const timeConversion = (s) => {
   const [hours, minutes, secPeriodd] = s.split(":");
   const second = secPeriodd.slice(0, 2);
@@ -186,12 +195,12 @@ const timeConversion = (s) => {
   }
 };
 
-//20 repeatStr
+//21 repeatStr
 const repeatStr = (n, s) => {
   return s.repeat(n);
 };
 
-//21 solution
+//22 solution
 const solution = (s) => {
   const spiltedArr = s.split("");
   const revArr = spiltedArr.reverse();
@@ -199,7 +208,7 @@ const solution = (s) => {
   return revtext;
 };
 
-//22 positiveSum
+//23 positiveSum
 const positiveSum = (arr) => {
   let sum = 0;
   for (const num of arr) {
@@ -210,7 +219,7 @@ const positiveSum = (arr) => {
   return sum;
 };
 
-// 23 summation
+// 24 summation
 const summation = (n) => {
   let sum = 0;
   for (let i = 1; i <= n; i++) {
@@ -219,9 +228,7 @@ const summation = (n) => {
   return sum;
 };
 
-//24  booleanToString 
+//25  booleanToString
 const booleanToString = (b) => {
   return String(b);
 };
-
-//25 
